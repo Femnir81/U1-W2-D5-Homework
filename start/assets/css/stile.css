@@ -180,3 +180,9 @@ footer .button {
     padding: 1rem;
    } 
 }
+
+@media screen and (min-width:1024px) {
+    header {
+        justify-content: space-around;
+    }
+}
