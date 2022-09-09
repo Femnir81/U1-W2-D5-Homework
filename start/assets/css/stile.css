@@ -1,9 +1,182 @@
-/* IMPOSTAZIONI GENERALI */
-
+/* IMPOSTAZIONI GENERALI  a 412 width*/
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+h3 {
+    line-height: 1;
+    font-weight: 500;
+}
+hr {
+    border: transparent;
+}
 /* HEADER */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 2rem;
+    box-shadow: #d3d3d3;
+}
+.fas, .far, .fa {
+    color: #e42424;
+    font-size: 2rem;
+}
+
+nav li {
+    display: inline-block;
+    display: none;
+    margin: 3px;
+}
+nav a {
+    text-decoration: none;
+}
+nav .button-register {
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    padding: 1rem;
+}
+.button-register a {
+    color: white;
+    font-size: 1.3rem;
+}
 
 /* MAIN */
+.annuncio {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: 40% 50%;
+    color: white;
+    padding: 1rem;
+}
+.button {
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    padding: 1.2rem 1.5rem;
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+section div:nth-of-type(1) {
+    text-align: center;
+}
+
+.promoter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.promoter div {
+    margin: 2rem 1.2rem;
+}
+.scrivici {
+    background-color: #0c0633;
+    color: white;
+}
+.scrivici div {
+    text-align: center;
+    padding: 8rem 1.2rem;
+}
+
+.scrivici p {
+    margin: 1.5rem auto;
+}
+
+.learning {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    
+}
+.learning img {
+    width: 350px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.learning p {
+    margin: 1.5rem auto;
+}
 
 /* FOOTER */
-
+footer {
+    background-color: rgb(238, 238, 238);
+    padding: 3rem 2rem 5rem 2rem;
+}
+footer section {
+    display: flex;
+    flex-direction: column;
+}
+footer div {
+    margin: 1.5rem 0;
+}
+footer p {
+    margin-top: 1.5rem;
+}
+footer i {
+    margin-top: 1.5rem;
+}
+#email {
+    margin-bottom: 0rem;
+}
+footer .button {
+    color: white;
+    margin-top: 0rem;
+}
 /* RESPONSIVE */
+
+@media screen and (min-width:768px) {
+    header .fas {
+        display: none;
+    }
+    nav li {
+        display: inline-block;
+    }
+    div img {
+        width: 130%;
+    }
+    .annuncio {
+        padding: 5rem;
+    }
+    .promoter {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .promoter div {
+        width: 25%;
+    }
+    .promoter h2 {
+        font-size: 2.5rem;
+    }
+   .learning {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem auto;
+   }
+   footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   footer section div {
+    max-width: 33%;
+    padding: 1rem;
+   } 
+}
