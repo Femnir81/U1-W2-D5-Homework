@@ -174,7 +174,7 @@ footer .button {
    footer section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
    }
    footer section div {
     max-width: 33%;

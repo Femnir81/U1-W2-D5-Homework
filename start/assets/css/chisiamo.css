@@ -114,12 +114,23 @@ main {
     text-align: center;
 }
 
+.tablehighres caption {
+    font-size: 2rem;
+}
+
 .tablehighres thead {
     background-color: #5F82A3;
+    color: white;
 }
 
 .tablehighres tbody {
     font-size: 1rem;
+}
+
+.tablehighres th {
+    font-size: 1.2rem;
+    padding: 1rem;
+    line-height: 1.5;
 }
 
 .tablehighres td {
@@ -186,5 +197,24 @@ footer .button {
     .tablehighres {
         height: 40vh;
         margin: 3rem auto;
-    } 
+        max-width: 768px;
+    }
+    footer section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       }
+       footer section div {
+        max-width: 33%;
+        padding: 1rem;
+       } 
+}
+
+@media screen and (min-width:1024px) {
+    header {
+        justify-content: space-around;
+    }
+    footer address {
+        text-align: center;
+    }
 }
