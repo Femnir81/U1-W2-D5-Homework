@@ -1,0 +1,163 @@
+/* IMPOSTAZIONI GENERALI  a 412 width*/
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 1rem auto;
+}
+h3 {
+    line-height: 1;
+    font-weight: 500;
+}
+hr {
+    border: transparent;
+    margin: 1rem auto;
+}
+
+.button {
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    padding: 1.2rem 1.5rem;
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 2rem;
+    box-shadow: 0 3px 13px #d3d3d3;
+}
+.fas, .far, .fa {
+    color: #e42424;
+    font-size: 2rem;
+}
+
+nav li {
+    display: inline-block;
+    display: none;
+    margin: 3px;
+}
+nav a {
+    text-decoration: none;
+}
+nav .button-register {
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    padding: 1rem;
+}
+.button-register a {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* MAIN */
+main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main input, main textarea {
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.contatti {
+    display: flex;
+    flex-direction: column;
+}
+
+.contattibox button {
+    color: white;
+    padding: 0.8rem 1rem;
+    font-size: 1.4rem;
+    margin-top: 0rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(238, 238, 238);
+    padding: 3rem 2rem 5rem 2rem;
+}
+footer section {
+    display: flex;
+    flex-direction: column;
+}
+footer div {
+    margin: 1.5rem 0;
+}
+footer p {
+    margin-top: 1.5rem;
+}
+footer i {
+    margin-top: 1.5rem;
+}
+#email {
+    margin-bottom: 0rem;
+}
+footer .button {
+    color: white;
+    margin-top: 0rem;
+    display:block
+}
+
+/* RESPONSIVE */
+@media screen and (min-width:768px) {
+    header .fas {
+        display: none;
+    }
+    nav li {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+    header img {
+        width: 130%;
+    }
+    .contatti {
+        flex-direction: row;
+        justify-content: space-between;    
+    }
+    .contattibox {
+        width: 50%;
+    }
+    .info {
+        width: 50%;
+    }
+    footer section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       }
+       footer section div {
+        max-width: 33%;
+        padding: 1rem;
+       } 
+}
+
+@media screen and (min-width:1024px) {
+    header {
+        justify-content: space-around;
+    }
+    .contatti {
+        justify-content: space-around;
+    }
+    footer address {
+        text-align: center;
+    }
+}
