@@ -14,6 +14,7 @@ h1 {
 h2 {
     font-size: 3.5rem;
     line-height: 1.1;
+    margin: 1rem auto;
 }
 h3 {
     line-height: 1;
@@ -22,6 +23,15 @@ h3 {
 hr {
     border: transparent;
 }
+
+.button {
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    padding: 1.2rem 1.5rem;
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
 /* HEADER */
 header {
     background-color: white;
@@ -55,64 +65,69 @@ nav .button-register {
 }
 
 /* MAIN */
-.annuncio {
-    background-image: url(../images/banner.jpg);
-    background-size: cover;
-    background-position: 40% 50%;
-    color: white;
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.coder {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.images {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.images img {
+    max-width: 90%;
+    margin: 1.5rem auto;
+}
+
+.tablelowres {
+    margin: 3rem auto;
+}
+
+.tablelowres tbody {
+    font-size: 1rem;
+}
+
+.tablelowres caption {
+    font-size: 2rem;
+}
+
+.tablelowres tr td:nth-of-type(odd) {
+    font-weight: bold;
+}
+
+.tablelowres td {
+    padding: 0.5rem;
+}
+
+.azurebackground {
+    background-color: #D2DCE7;
+}
+
+.tablehighres {
+    text-align: center;
+}
+
+.tablehighres thead {
+    background-color: #5F82A3;
+}
+
+.tablehighres tbody {
+    font-size: 1rem;
+}
+
+.tablehighres td {
     padding: 1rem;
 }
-.button {
-    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
-    padding: 1.2rem 1.5rem;
-    font-size: 1.9rem;
-    margin-top: 1rem;
-    margin-bottom: 0.7rem;
-}
 
-.button a {
-    color: white;
-    text-decoration: none;
-}
-.whydeveloper {
-    text-align: center;
-}
-
-.promoter {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-.promoter div {
-    margin: 2rem 1.2rem;
-}
-.scrivici {
-    background-color: #0c0633;
-    color: white;
-}
-.scrivici div {
-    text-align: center;
-    padding: 8rem 1.2rem;
-}
-
-.scrivici p {
-    margin: 1.5rem auto;
-}
-
-.learning {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 1.2rem;
-    
-}
-.learning img {
-    width: 350px;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-.learning p {
-    margin: 1.5rem auto;
+.tablehighres tbody tr:nth-of-type(odd) {
+    background-color: #D2DCE7;
 }
 
 /* FOOTER */
@@ -141,7 +156,13 @@ footer .button {
     margin-top: 0rem;
     display:block
 }
+
 /* RESPONSIVE */
+@media screen and (max-width:767px) {
+    .tablehighres {
+        display: none;
+    }
+}
 
 @media screen and (min-width:768px) {
     header .fas {
@@ -153,37 +174,17 @@ footer .button {
     div img {
         width: 130%;
     }
-    .annuncio {
-        padding: 5rem;
+    main p {
+        font-size: 1.2rem;
     }
-    .promoter {
-        flex-direction: row;
-        justify-content: space-evenly;
+    .images {
+        flex-direction: row;        
     }
-    .promoter div {
-        width: 25%;
+    .tablelowres {
+        display: none;
     }
-    .promoter h2 {
-        font-size: 2.5rem;
-    }
-   .learning {
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 2rem auto;
-   }
-   footer section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   }
-   footer section div {
-    max-width: 33%;
-    padding: 1rem;
-   } 
-}
-
-@media screen and (min-width:1024px) {
-    header {
-        justify-content: space-around;
-    }
+    .tablehighres {
+        height: 40vh;
+        margin: 3rem auto;
+    } 
 }
